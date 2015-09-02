@@ -65,6 +65,8 @@ post '/mortgage_calculation' do
   erb :mortgage
 end
 
+#BMI calculator GET & POST
+
 get '/bmi' do
   @title = 'BMI Calculator'
   erb :bmi
@@ -75,9 +77,16 @@ post '/bmi_calculation' do
   erb :bmi
 end
 
-get '/speed' do
-  @title = 'Speed'
-  erb :speed
+#Journey GET & POST 
+
+get '/journey' do
+  @title = 'Journey'
+  erb :journey
+end
+
+post '/journey_calculation' do 
+  @result = Journey.calc(params[:distance], params[:mpg], params[:cost], params[:speed])
+  erb :journey
 end
 
 

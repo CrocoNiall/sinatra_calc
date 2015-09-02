@@ -1,0 +1,11 @@
+<h1><%= @title %></h1>
+
+<form action="/journey_calculation" method="post">
+  <input type="text" name="distance" placeholder="Distance (m)" autofocus>
+  <input type="text" name="mpg" placeholder="MPG" autofocus>
+  <input type="text" name="cost" placeholder="Cost PG £"autofocus>
+  <input type="text" name="speed" placeholder="Speed MPG"autofocus>
+  <button>Calculate!</button>
+
+
+  <p> Your average journey cost will be: <%= @result %> </p>
