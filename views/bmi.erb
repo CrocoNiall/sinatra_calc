@@ -1,0 +1,10 @@
+<h1><%= @title %></h1>
+
+<form action="/bmi_calculation" method="post">
+  <input type="text" name="units" autofocus>
+  <input type="text" name="weight" autofocus>
+  <input type="text" name="height" autofocus>
+  <button>Calculate!</button>
+
+
+  <p> Your BMI is: <%= @result %> </p>

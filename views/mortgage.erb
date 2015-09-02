@@ -1,0 +1,10 @@
+<h1><%= @title %></h1>
+
+<form action="/mortgage_calculation" method="post">
+  <input type="text" name="loan" placeholder="Loan Amount £" autofocus>
+  <input type="text" name="apr" placeholder="apr" autofocus>
+  <input type="text" name="months" placeholder="Loan amount M"autofocus>
+  <button>Calculate!</button>
+
+
+  <p> £<%= @result %> </p>
